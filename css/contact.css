@@ -1,0 +1,75 @@
+.contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "full-name"
+    "email"
+    "message"
+    "submit";
+    grid-gap: 35px;
+    margin-top: -20px;
+}
+.contact input, .contact button, .contact textarea,
+.contact input:active, .contact textarea:active,
+.contact input:focus, .contact textarea:focus{
+    border: 1px solid #555;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #555;
+    outline: none;
+}
+.full-name{
+    grid-area: full-name;
+}
+.full-name:placeholder-shown:focus{
+    border-bottom: 2px solid red;
+}
+.full-name:not(:placeholder-shown):focus{
+    border-bottom: 2px solid green;
+}
+.email{
+    grid-area: email;
+}
+.email:not(:placeholder-shown):invalid{
+    border-bottom: 2px solid red;
+}
+.email:not(:placeholder-shown):valid{
+    border-bottom: 2px solid green;
+}
+
+.message{
+    grid-area: message;
+    height: 200px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.message::-webkit-scrollbar{
+    width: .7rem;
+}
+.message::-webkit-scrollbar-thumb{
+    background-color: #555;
+}
+.message::-webkit-scrollbar-track{
+    background-color: #bccbde;
+}
+
+.btn-submit{
+    grid-area: submit;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn-submit:hover{
+    color: #bccbde;
+    /* box-shadow: inset 200px 0 0 0 #555; */
+    background-color: #555;
+}
