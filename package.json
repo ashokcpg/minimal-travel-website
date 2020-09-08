@@ -1,0 +1,31 @@
+{
+	"name": "minimal-news-site",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:sass": "node-sass sass/main.scss css/style.css -w",
+		"devserver": "live-server",
+		"start": "npm-run-all --parallel devserver watch:sass",
+		"compile:sass": "node-sass sass/main.scss css/style.comp.css",
+		"compress:css": "node-sass css/style.comp.css css/style.min.css --output-style compressed",
+		"build:css": "npm-run-all compile:sass compress:css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@gitlab.com/ashokcpg/minimal-travel-website.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://gitlab.com/ashokcpg/minimal-travel-website/issues"
+	},
+	"homepage": "https://gitlab.com/ashokcpg/minimal-travel-website#readme",
+	"dependencies": {
+		"autoprefixer": "^9.8.6",
+		"live-server": "^1.2.1",
+		"node-sass": "^4.14.1",
+		"npm-run-all": "^4.1.5"
+	}
+}

@@ -38,7 +38,7 @@
 .email{
     grid-area: email;
 }
-.email:not(:placeholder-shown):invalid{
+.email:not(:placeholder-shown):empty{
     border-bottom: 2px solid red;
 }
 .email:not(:placeholder-shown):valid{
