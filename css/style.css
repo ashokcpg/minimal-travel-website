@@ -50,7 +50,7 @@ a {
 	/* padding-top: 10px; */
 	align-items: center;
 	border-bottom: 1.5px solid #555;
-	/* padding:10px; */
+	padding: 10px;
 }
 .nav h1 {
 	/* color: #bccbde; */
@@ -93,7 +93,7 @@ a {
 }
 .date {
 	font-size: 1.5rem;
-	position: absolute;
+	position: relative;
 	left: 30px;
 	font-weight: 600;
 }
@@ -158,7 +158,7 @@ a {
 	padding: 8px 0px 8px 0px;
 	cursor: pointer;
 	margin-left: 10px;
-	transition: all 0.3s ease;https://github.com/ashokcpg/minimal-travel-website
+	transition: all 0.3s ease;
 	font-family: "Times New Roman", Times, serif;
 }
 .read-more:hover {
@@ -219,10 +219,6 @@ a {
 	/* grid-template-columns: 1fr 1fr;
     grid-area: "content3 content4"; */
 	margin: 10px;
-	background-image: url(../img/thumbnail-3.png);
-	background-position: right;
-	background-size: 150px;
-	background-repeat: no-repeat;
 }
 .tertiary-blog-title {
 	font-family: "Times New Roman", Times, serif;
@@ -243,12 +239,12 @@ a {
 	box-shadow: inset 210px 0 0 0 #555;
 	color: #bccbde;
 }
-.thumbnail-container {
+.third-img-container {
 	text-align: center;
 }
-.thumbnail-image-third {
-	padding-bottom: 10px;
+.third-img-container img {
 	height: 200px;
+	filter: invert(0.4);
 }
 
 .content4 {
