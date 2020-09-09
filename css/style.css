@@ -98,10 +98,9 @@ a {
 	font-weight: 600;
 }
 .content1 {
-	background-color: yellow;
 	height: auto;
 	grid-area: content1;
-	position: absolute;
+	position: relative;
 	border: var(--blog-border);
 	margin: 10px;
 }
@@ -113,9 +112,11 @@ a {
 	font-size: 2rem;
 }
 .content1 img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 	width: 100%;
 	object-fit: cover;
-	margin-top: 5rem;
 	filter: grayscale(100%) contrast(0.5);
 }
 .blog-title-main {
@@ -157,7 +158,7 @@ a {
 	padding: 8px 0px 8px 0px;
 	cursor: pointer;
 	margin-left: 10px;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease;https://github.com/ashokcpg/minimal-travel-website
 	font-family: "Times New Roman", Times, serif;
 }
 .read-more:hover {
