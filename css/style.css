@@ -14,9 +14,8 @@ html {
 	color: #555;
 }
 body {
-	height: 80vh;
-	width: 100vw;
 	background-color: #bccbde;
+	padding: 2rem;
 }
 a {
 	text-decoration: none;
@@ -24,9 +23,6 @@ a {
 }
 .container {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr 1fr;
 	grid-gap: 5px;
@@ -38,7 +34,6 @@ a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 600;
-	height: 80vh;
 	width: 90vw;
 	border: 2px solid #555;
 }
@@ -76,10 +71,10 @@ a {
 .search-bar {
 	position: absolute;
 	right: 10rem;
-	background-color: green;
 	width: 40px;
 	float: right;
 	text-align: center;
+	cursor: pointer;
 }
 .sidebar {
 	background-color: transparent;
@@ -103,6 +98,7 @@ a {
 	position: relative;
 	border: var(--blog-border);
 	margin: 10px;
+	padding: 0.8rem;
 }
 .index {
 	padding: 8px;
@@ -130,17 +126,18 @@ a {
 	text-align: left;
 	float: left;
 	padding-left: 10px;
+	margin-bottom: 1rem;
 }
 .post-detail {
-	float: left;
-	margin: 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+.post-detail ul {
+	display: flex;
+	list-style: none;
+}
 .post-detail li {
-	display: inline-block;
 	font-weight: 100;
 	font-size: 0.7rem;
-	margin-right: 2px;
 }
 .post-description {
 	font-size: 0.8rem;
@@ -151,7 +148,6 @@ a {
 .post-description span {
 	float: left;
 	text-align: left;
-	margin: 0px 0px 0px 10px;
 }
 .read-more {
 	float: left;
